@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Create a new post</title>
+</head>
+<body>
+	<form action='/blog/<%= blog_id %>/post' method='post'>
+		<h2>Create a post</h2>
+		<div>
+			<label for="title"> Title
+				<input type="text" name="post_title">
+			</label>
+		</div>
+		<div>
+			<label for="body"> Text
+				<textarea name="post_body" rows="8" cols="45"></textarea>
+			</label>
+		</div>
+		<div>
+			<label for="Submit">
+				<input type="submit" value="Submit Post" name="post_submit">
+			</label>
+		</div>
+	</form>
+</body>
+</html>

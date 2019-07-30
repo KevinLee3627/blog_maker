@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<p>Welcome, <%= user.username %></p>
+	<a href="/feed">Go to feed</a>
+	<a href="/blog/create">Create a blog</a>
+	<ul>
+	<% for(let i = 0; i < user.blogs.length; i++) { %>
+		<% let blog_name = user.blogs[i].name %>
+		<% let blog_id = user.blogs[i]._id %>
+		<li><a href="/blog/<%= blog_id %>"><%= blog_name %></a></li>
+	<% } %>
+	</ul>
+</body>
+</html>

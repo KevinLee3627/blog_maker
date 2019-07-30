@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Create a new BLOG</title>
+</head>	
+<body>
+	<form action='/blog/create' method='post'>
+		<h2>Create a blog</h2>
+		<div>
+			<label for="title"> Blog Title
+				<input type="text" name="blog_title">
+			</label>
+		</div>
+		<div>
+			<label for="description"> Blog Description
+				<textarea name="blog_desc" rows="8" cols="45"></textarea>
+			</label>
+		</div>
+		<div>
+			<label for="submit">
+				<input type="submit" value="Create Blog" name="blog_create">	
+			</label>
+		</div>
+	</form>
+</body>
+</html>
