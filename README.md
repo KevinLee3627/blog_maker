@@ -29,6 +29,10 @@ Features:
 
     ☐ Be able to search for other users
 
+    ☐ Better navigation between site pages
+
+    ☐ Handle errors for views
+
 Misc:
 
     ☐ Figure out how to deploy this to an always-online service
