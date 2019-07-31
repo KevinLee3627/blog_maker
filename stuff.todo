@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-A personal project where you can create your own blog!
-
-## TODO
 Styling Views:
     ✔ profile_self @done(2019-07-30 21:23) @project(Styling Views)
     ✔ profile_other @done(2019-07-30 21:23) @project(Styling Views)
@@ -18,10 +14,4 @@ Features:
     ☐ Delete posts
     ☐ Delete blogs
     ☐ Be able to search for other users
-
-Misc:
     ☐ Figure out how to deploy this to an always-online service
-=======
-Blog Maker
-A project, under construction.
->>>>>>> 2b51091cbbfb0715434488b1d5de7d6bf504e8bd
