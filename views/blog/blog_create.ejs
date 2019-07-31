@@ -1,26 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Create a new BLOG</title>
-</head>	
+	<title>Create blog</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
 <body>
-	<form action='/blog/create' method='post'>
-		<h2>Create a blog</h2>
-		<div>
-			<label for="title"> Blog Title
-				<input type="text" name="blog_title">
-			</label>
+	<form action='/blog/create' method='post' class="container mt-5">
+		<div class="form-group">
+			<label for="blog_title"> Blog Title </label>
+			<input type="text" name="blog_title" class="form-control" id="blog_title">
 		</div>
-		<div>
-			<label for="description"> Blog Description
-				<textarea name="blog_desc" rows="8" cols="45"></textarea>
-			</label>
+		<div class="form-group">
+			<label for="blog_desc"> Blog Description </label>
+			<textarea name="blog_desc" class="form-control" id="blog_desc" rows="8" cols="45"></textarea>
 		</div>
-		<div>
-			<label for="submit">
-				<input type="submit" value="Create Blog" name="blog_create">	
-			</label>
-		</div>
+		<input type="submit" class="btn btn-primary" value="Create Blog" name="blog_create">
 	</form>
 </body>
 </html>

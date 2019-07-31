@@ -2,25 +2,23 @@
 <html>
 <head>
 	<title>Create a new post</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 <body>
-	<form action='/blog/<%= blog_id %>/post' method='post'>
+	<form action='/blog/<%= blog_id %>/post' method='post' class="container mt-3">
 		<h2>Create a post</h2>
-		<div>
-			<label for="title"> Title
-				<input type="text" name="post_title">
-			</label>
+		<div class="form-group">
+			<label for="title"> Title </label>
+			<input type="text" name="post_title" class="form-control">
 		</div>
-		<div>
-			<label for="body"> Text
-				<textarea name="post_body" rows="8" cols="45"></textarea>
-			</label>
+		<div class="form-group">
+			<label for="body"> Text	</label>
+			<textarea name="post_body" class="form-control" rows="8" cols="45"></textarea>
 		</div>
-		<div>
-			<label for="Submit">
-				<input type="submit" value="Submit Post" name="post_submit">
-			</label>
-		</div>
+		<input type="submit" class="btn btn-primary" value="Submit Post" name="post_submit" class="form-control">
 	</form>
 </body>
 </html>
